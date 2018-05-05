@@ -18,7 +18,7 @@ After it is installed you can start it by simply typing in your terminal:
 from setuptools import setup
 
 setup(name='WeatherApp',
-      version='0.1',
+      version='0.2',
       description='Fetches current weather conditions in your city',
       long_description=__doc__,
       long_description_content_type='text/markdown',
@@ -27,6 +27,7 @@ setup(name='WeatherApp',
       author='Uros Jevremovic',
       author_email='jevremovic.uros91@gmail.com',
       packages=['WeatherApp'],
+      install_requires=['requests', ],
       entry_points={
           "console_scripts": ["current_weather=WeatherApp.CLI_weather_app:main"],
       },
